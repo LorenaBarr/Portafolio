@@ -24,5 +24,20 @@
     "eslint-plugin-react-refresh": "^0.4.5",
     "typescript": "^5.2.2",
     "vite": "^5.1.6"
+  },
+  "tsconfig": {
+    "compilerOptions": {
+      "target": "es5",
+      "module": "commonjs",
+      "strict": true,
+      "jsx": "react",
+      "esModuleInterop": true,
+      "skipLibCheck": true
+    },
+    "include": [
+      "src/**/*.tsx",
+      "src/**/*.ts"
+    ]
   }
+
 }

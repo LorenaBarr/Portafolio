@@ -1,0 +1,14 @@
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  footer a {
+    margin: 0 10px;
+  }
+  
+  footer img {
+    width: 30px; /* ajusta el tamaño según tus necesidades */
+    height: 30px; /* ajusta el tamaño según tus necesidades */
+  }
