@@ -1,11 +1,11 @@
 import React from 'react';
-import '../styles/footer.css'
+import '../styles/footer.css';
 
 const Footer: React.FC = () => {
   return (
     <footer>
       <p>© 2024 Lorena Barrera</p>
-      <div>
+      <div className="social-links">
         <a href="https://www.linkedin.com/in/lorena-barrera-developer-frontend-web/" target="_blank" rel="noopener noreferrer">
           <img src="/images/linkedin.png" alt="LinkedIn" />
         </a>

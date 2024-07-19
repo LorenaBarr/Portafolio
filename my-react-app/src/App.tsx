@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Presentation from './components/Presentation';
@@ -10,14 +10,16 @@ import Projects from './pages/Projects';
 const App: React.FC = () => {
   return (
     <Router>
-      <div>
+      <div id="app-container">
         <Header />
-        <Presentation></Presentation>
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/about" component={AboutMe} />
-          <Route path="/projects" component={Projects} />
-        </Switch>
+        <main>
+          <Presentation />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutMe />} />
+            <Route path="/projects" element={<Projects />} />
+          </Routes>
+        </main>
         <Footer />
       </div>
     </Router>
