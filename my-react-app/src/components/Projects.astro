@@ -1,0 +1,203 @@
+---
+// Projects.astro
+
+const proyectos = [
+  {
+    titulo: "EmoCare",
+    imagen: "/img/emocare.jpg",
+    enlace:
+      "https://www.figma.com/proto/qqJBXbPmbitMs8CoC8wjef/EmoCareFinal?page-id=3%3A1427&node-id=8-2434&viewport=1164%2C-1838%2C0.45&t=ftefOYURAkyWAFgs-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=8%3A2434",
+    descripcion: "EmoCare Diseño UX/UI",
+    repositorio:
+      "https://www.behance.net/gallery/205254755/Diseno-UX-UI-APP-EMOCARE",
+  },
+  {
+    titulo: "Shoppi",
+    imagen: "/img/shoppi.jpg",
+    enlace: "https://react-shopi-mauve.vercel.app/",
+    descripcion: "Desarrollo de una plantilla de E-Commerce",
+    repositorio: "https://github.com/LorenaBarr/ReactShopi",
+  },
+  {
+    titulo: "EcoAlerta Blog",
+    imagen: "/img/ecoalerta.jpg",
+    enlace: "https://www.ejemplo.com/proyecto2",
+    descripcion: "Blog Ambiental de Boyaca",
+    repositorio: "https://github.com/LorenaBarr/EcoAlerta",
+  },
+  {
+    titulo: "E-Commerce Fluffy ",
+    imagen: "/img/E-fluffy.jpg",
+    enlace: "https://www.ejemplo.com/proyecto2",
+    descripcion: "Venta de Peluches",
+    repositorio: "https://github.com/LorenaBarr/E-coomercefluffy",
+  },
+  {
+    titulo: "E-Commerce Artesanias",
+    imagen: "/img/E-artesanias.jpg",
+    enlace: "https://www.ejemplo.com/proyecto2",
+    descripcion: "Desarrollo de una plantilla de E-Commerce",
+    repositorio: "https://github.com/LorenaBarr/e-coomerceArtesanias ",
+  },
+  {
+    titulo: "Api fleet taxi",
+    imagen: "/img/api-fleet.jpg",
+    enlace: "https://www.ejemplo.com/proyecto2",
+    descripcion: "Creacion de api",
+    repositorio:
+      "https://github.com/LorenaBarr/Lo-UPSK-JAVA-003-fleet-management-api",
+  },
+  {
+    titulo: "Adivina el numero",
+    imagen: "/img/GuessNum.jpg",
+    enlace: "https://www.ejemplo.com/proyecto2",
+    descripcion: "Adivinar el numero entre 1 a 100",
+    repositorio:
+      "https://github.com/LorenaBarr/UPSK-JAVA-003-guess-the-number-Lo",
+  },
+  {
+    titulo: "Movie Api",
+    imagen: "/img/movies.jpg",
+    enlace: "https://dev-010-movie-challenge-fw-lo.vercel.app/",
+    descripcion: "Manejo de Api de peliculas",
+    repositorio: "https://github.com/LorenaBarr/DEV010-movie-challenge-fw-Lo",
+  },
+  {
+    titulo: "Md Links",
+    imagen: "/img/md-links.jpg",
+    enlace: "https://www.ejemplo.com/proyecto2",
+    descripcion: "Biblioteca lee y analiza archivos en formato Markdown",
+    repositorio: "https://github.com/LorenaBarr/DEV010-md-links",
+  },
+  {
+    titulo: "Tech Share",
+    imagen: "/img/TechShare.jpg",
+    enlace: "https://techshare-two.vercel.app/",
+    descripcion: "CRUD",
+    repositorio: "https://github.com/LorenaBarr/DEV010-social-network",
+  },
+  {
+    titulo: "Cipher Love",
+    imagen: "/img/CipherLove.jpg",
+    enlace: "https://lorenabarr.github.io/CipherLove/",
+    descripcion: "Cifrado Cesar",
+    repositorio: "https://github.com/LorenaBarr/CipherLove",
+  },
+  {
+    titulo: "Data Lovers Pokemon",
+    imagen: "/img/DataLovers.jpg",
+    enlace: "https://lorenabarr.github.io/DEV010-data-lovers-Pokemon-go/",
+    descripcion: "Datos de pokemon Json",
+    repositorio: "https://github.com/LorenaBarr/CipherLove",
+  },
+  // Otros proyectos...
+];
+---
+
+<div class="projects-container">
+  <h1>Proyectos</h1>
+  <div class="projects-grid">
+    {
+      proyectos.map((proyecto) => (
+        <div class="project-card">
+          <img src={proyecto.imagen} alt={proyecto.titulo} />
+          <h3>{proyecto.titulo}</h3>
+          <p>{proyecto.descripcion}</p>
+          <div class="project-links">
+            <a href={proyecto.enlace} target="_blank">
+              Ver Proyecto
+            </a>
+            <a href={proyecto.repositorio} target="_blank">
+              Repositorio
+            </a>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</div>
+
+<style>
+  .projects-container {
+    padding: 2rem;
+    background-color: #222; /* Fondo oscuro */
+    color: #fff; /* Texto en blanco para contraste */
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .project-card {
+    position: relative;
+    background: #333; /* Fondo oscuro para las tarjetas */
+    border-radius: 12px; /* Esquinas redondeadas */
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem;
+    transition:
+      transform 0.2s,
+      box-shadow 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra */
+  }
+
+  .project-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px; /* Coincide con el border-radius de la tarjeta */
+    padding: 2px; /* Ancho del borde */
+    background: linear-gradient(135deg, #ff66b2, #9966ff, #ff99cc);
+    background-size: 300% 300%; /* Para animar el movimiento del gradiente */
+    z-index: -1;
+    transition: background-position 0.5s ease; /* Movimiento suave del gradiente */
+  }
+
+  .project-card:hover::before {
+    background-position: 100% 100%; /* Mueve el gradiente en hover */
+  }
+
+  .project-card img {
+    width: 100%;
+    height: 200px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor manteniendo el aspecto */
+    border-bottom: 1px solid #444; /* Bordes más oscuros para coincidir con el fondo */
+  }
+
+  .project-card h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #fff; /* Texto en blanco para las tarjetas */
+  }
+
+  .project-card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #ddd; /* Texto ligeramente gris para suavizar */
+  }
+
+  .project-links a {
+    display: inline-block;
+    margin: 0.5rem 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #ff66b2; /* Color del botón que combina con el borde */
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+
+  .project-links a:hover {
+    background-color: #9966ff; /* Cambia el color al pasar el mouse */
+  }
+
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Sombra más pronunciada en hover */
+  }
+</style>
