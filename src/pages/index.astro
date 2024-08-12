@@ -1,10 +1,10 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import AboutMe from "../components/AboutMe.astro";
 import Projects from "../components/Projects.astro";
+import Hero from "../components/Hero.astro";
+import Education from "../components/Education.astro";
 ---
 
 <html lang="es">
@@ -19,21 +19,17 @@ import Projects from "../components/Projects.astro";
     <Header />
 
     <!-- Hero -->
-    <section id="inicio">
-      <h1>¡Hola! Soy Lorena Barrera</h1>
-      <p>Una Desarrolladora Web Junior</p>
-      <p>
-        Web Developer | Scrum | Frontend | JavaScript | CSS | HTML | React |
-        Java | Node | Angular
-      </p>
-      <button>Contáctame</button>
-      <button>Descarga mi CV</button>
-    </section>
+    <Hero />
 
     <!-- Proyectos -->
     <Projects />
+    <!-- Educación -->
+    <Education />
+
+    <!-- Sobre Mí -->
     <AboutMe />
 
+    <!-- Footer -->
     <Footer />
   </body>
 </html>

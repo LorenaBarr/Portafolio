@@ -1,0 +1,108 @@
+---
+import EducationCard from "../components/EducationCard.astro";
+
+const educationData = [
+  {
+    title: "JUMP CODEAR FUTURA",
+    duration: "ABRIL – AGOSTO 2024",
+    description: "DISEÑO UX-UI",
+  },
+  {
+    title: "UTN BA – INCLUYEME",
+    duration: "MAYO – AGOSTO 2024",
+    description: "Curso Full Stack nivel 2",
+  },
+  {
+    title: "PLATZI – DIPLOMA",
+    duration: "JUNIO 2024",
+    description: "Curso de React.js con Vite.js y TailwindCSS",
+  },
+  {
+    title: "UNIVERSIDAD SERGIO ARBOLEA",
+    duration: "ENERO – JULIO 2024",
+    description:
+      "Bootcamp Nivel Integrado – Desarrollo de aplicaciones web Java – Angular",
+  },
+  {
+    title: "UTN BA – INCLUYEME",
+    duration: "MARZO – MAYO 2024",
+    description: "Curso Full Stack nivel I",
+  },
+  {
+    title: "PLATZI – DIPLOMA",
+    duration: "FEBRERO 2024",
+    description: "Curso de Introducción al Desarrollo Backend",
+  },
+  {
+    title: "LABORATORIA",
+    duration: "JULIO - DICIEMBRE 2023",
+    description:
+      "Bootcamp intensivo de 6 meses, donde adquirí habilidades blandas y técnicas de programación web a través de autoaprendizaje desarrollando proyectos en un ambiente laboral simulado.",
+  },
+  {
+    title: "UTN BA - INCLUYEME",
+    duration: "AGOSTO-NOVIEMBRE 2023",
+    description:
+      "Software Testing. Curso de testing funcional con enfoque en accesibilidad.",
+  },
+  {
+    title: "SENA",
+    duration: "2022",
+    description:
+      "Técnico en producción multimedia. Abarcó un proceso de cuatro etapas clave: análisis de información, diseño de soluciones multimediales, integración de elementos multimedia y postproducción.",
+  },
+  {
+    title: "UNIVERSIDAD SURCOLOMBIANA",
+    duration: "JULIO -NOVIEMBRE 2021",
+    description:
+      "Diplomado Educación y Memoria: Estrategias para el abordaje del conflicto armado y la paz en la escuela.",
+  },
+  {
+    title: "SENA",
+    duration: "DICIEMBRE 2018",
+    description:
+      "Curso corto: Organización documental en el entorno laboral. Administración documental en el entorno laboral.",
+  },
+  {
+    title: "UNIVERSIDAD DE CUNDINAMARCA",
+    duration: "2016",
+    description: "Licenciatura en básica con énfasis en ciencias sociales.",
+  },
+];
+---
+
+<section class="education-section">
+  <h2>Educación 📚</h2>
+  <div class="education-grid">
+    {
+      educationData.map((education) => (
+        <EducationCard
+          title={education.title}
+          duration={education.duration}
+          description={education.description}
+        />
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .education-section {
+    padding: 4rem 2rem;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+  }
+
+  .education-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #ff66b2;
+  }
+
+  .education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+</style>
