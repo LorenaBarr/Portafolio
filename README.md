@@ -1,54 +1,57 @@
-# Astro Starter Kit: Basics
+# 🌟 Portafolio de Lorena Barrera 🌟
 
-```sh
-npm create astro@latest -- --template basics
-```
+¡Hola! Soy **Lorena Barrera**, una desarrolladora web junior apasionada por la tecnología, el diseño UX/UI, y el desarrollo de aplicaciones web. En este portafolio, presento algunos de mis proyectos más destacados y las habilidades que he adquirido a lo largo de mi carrera.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## 🚀 Sobre Mí
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Soy una desarrolladora web con un fuerte enfoque en la educación y las ciencias sociales, además de mi gran pasión por la tecnología. He decidido adentrarme en el apasionante mundo del desarrollo web debido a mi trayectoria impulsada por una pasión por la investigación y la gestión de proyectos.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+Actualmente, estoy perfeccionando mis habilidades en **JavaScript, CSS, HTML, React, Java, Node, Angular**, y más. Estoy emocionada por poner en práctica estos conocimientos en proyectos desafiantes que me permitan seguir creciendo profesionalmente.
 
-## 🚀 Project Structure
+## 📚 Educación
 
-Inside of your Astro project, you'll see the following folders and files:
+He tenido la oportunidad de participar en varios programas y cursos que han fortalecido mis habilidades como desarrolladora:
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- **JUMP CODEAR FUTURA** | Abril – Agosto 2024
+  - Diseño UX-UI
+- **UTN BA – INCLUYEME** | Mayo – Agosto 2024
+  - Curso Full Stack Nivel 2
+- **UNIVERSIDAD SERGIO ARBOLEA** | Enero – Julio 2024
+  - Bootcamp Nivel Integrado – Desarrollo de aplicaciones web Java – Angular
+- **LABORATORIA** | Julio - Diciembre 2023
+  - Bootcamp intensivo de 6 meses en habilidades blandas y técnicas de programación web.
+- **Y más...**
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 🛠️ Habilidades Técnicas
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- **Lenguajes**: JavaScript, HTML, CSS, Java, Node.js
+- **Frameworks**: React, Angular, Express, Spring Boot
+- **Herramientas**: Git, GitHub, VS Code, Figma, Postman
+- **Metodologías**: Scrum, Agile
 
-Any static assets, like images, can be placed in the `public/` directory.
+## 💼 Proyectos Destacados
 
-## 🧞 Commands
+Aquí algunos de los proyectos en los que he trabajado:
 
-All commands are run from the root of the project, from a terminal:
+- **[Cipher Love](https://lorenabarr.github.io/CipherLove/):** Una aplicación web que implementa el cifrado César para mensajes secretos.
+- **[Tech Share](https://techshare-two.vercel.app/):** Una red social básica desarrollada con React, donde los usuarios pueden compartir publicaciones técnicas.
+- **[Movie API](https://dev-010-movie-challenge-fw-lo.vercel.app/):** Un proyecto que consume una API de películas para mostrar información detallada sobre diferentes títulos.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+¡Visita la sección de [Proyectos](#proyectos) para ver más ejemplos de mi trabajo!
 
-## 👀 Want to learn more?
+## 💬 Contáctame
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Estoy siempre en busca de nuevas oportunidades para colaborar en proyectos interesantes o simplemente para conectarme con otros profesionales en el campo de la tecnología. No dudes en contactarme a través de:
+
+- **LinkedIn:** [Lorena Barrera](https://www.linkedin.com/in/lorenabarr/)
+- **GitHub:** [@LorenaBarr](https://github.com/LorenaBarr)
+- **Email:** lorebarr120@gmail.com
+- **WhatsApp:** [Envíame un mensaje](https://wa.me/message/PL6AD3Q6K22XP1)
+
+## 🌐 Visita Mi Portafolio
+
+Puedes explorar mi portafolio en vivo aquí: **[Mi Portafolio](https://tu-portafolio.vercel.app)**
+
+---
+
+✨ **"Siempre en constante aprendizaje y evolución."** ✨
