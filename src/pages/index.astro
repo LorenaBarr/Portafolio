@@ -5,7 +5,6 @@ import AboutMe from "../components/AboutMe.astro";
 import Projects from "../components/Projects.astro";
 import Hero from "../components/Hero.astro";
 import Education from "../components/Education.astro";
-
 ---
 
 <html lang="es">
@@ -42,5 +41,16 @@ import Education from "../components/Education.astro";
 
     <!-- Footer -->
     <Footer />
+    <!-- Script para el menú desplegable -->
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navList = document.querySelector(".nav-list");
+
+      if (menuToggle && navList) {
+        menuToggle.addEventListener("click", function () {
+          navList.classList.toggle("open");
+        });
+      }
+    </script>
   </body>
 </html>

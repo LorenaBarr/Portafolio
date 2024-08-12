@@ -1,4 +1,5 @@
 <header>
+  <button class="menu-toggle" aria-label="Abrir menú"> ☰ </button>
   <nav>
     <ul class="nav-list">
       <li><a href="#inicio">Inicio</a></li>
@@ -36,5 +37,27 @@
 
   .nav-list a:hover {
     text-decoration: underline; /* Subrayado al pasar el mouse */
+  }
+  /* Estilos específicos para pantallas pequeñas (móviles) */
+  /* Para móviles */
+  @media (max-width: 768px) {
+    .nav-list {
+      display: none; /* Oculta el menú por defecto */
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .nav-list.open {
+      display: flex; /* Muestra el menú cuando está abierto */
+    }
+
+    .menu-toggle {
+      display: block; /* Muestra el botón de menú */
+      background: none;
+      border: none;
+      color: white;
+      font-size: 2rem;
+      cursor: pointer;
+    }
   }
 </style>
