@@ -12,7 +12,7 @@
 
 <style>
   header {
-    background-color: #333; /* Color de fondo del header */
+    background-color: #333; /* Tono más claro que el resto del fondo */
     padding: 1rem; /* Espaciado interno */
   }
 
@@ -33,13 +33,32 @@
     color: #fff; /* Color del texto de los enlaces */
     text-decoration: none;
     font-size: 1.2rem;
+    position: relative; /* Necesario para la pseudo-clase :after */
   }
 
-  .nav-list a:hover {
-    text-decoration: underline; /* Subrayado al pasar el mouse */
+  /* Línea de neón debajo del enlace al hacer hover */
+  .nav-list a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    bottom: -5px;
+    background: linear-gradient(
+      90deg,
+      #000000,
+      #fa448c,
+      #491d88
+    ); /* Degradado de la línea de neón */
+    transition: width 0.3s ease-in-out;
+    width: 0;
   }
+
+  .nav-list a:hover::after {
+    width: 100%; /* La línea se muestra al pasar el mouse */
+  }
+
   /* Estilos específicos para pantallas pequeñas (móviles) */
-  /* Para móviles */
   @media (max-width: 768px) {
     .nav-list {
       display: none; /* Oculta el menú por defecto */
@@ -52,12 +71,19 @@
     }
 
     .menu-toggle {
-      display: block; /* Muestra el botón de menú */
+      display: block; /* Muestra el botón de menú en móviles */
       background: none;
       border: none;
       color: white;
       font-size: 2rem;
       cursor: pointer;
+    }
+  }
+
+  /* Ocultar el botón del menú hamburguesa en pantallas grandes */
+  @media (min-width: 769px) {
+    .menu-toggle {
+      display: none; /* Oculta el botón de menú en pantallas grandes */
     }
   }
 </style>
